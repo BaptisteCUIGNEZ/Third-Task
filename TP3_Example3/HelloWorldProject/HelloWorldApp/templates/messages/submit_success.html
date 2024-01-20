@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <title>Submit Success</title>
+</head>
+<body>
+    <h2>Message Submitted Successfully</h2>
+    <p>Your message has been submitted successfully.</p>
+
+    <li><a href="{% url 'get_messages' %}">View Messages</a></li>
+    <li><a href="{% url 'messages_home' %}">Choice of action</a></li>
+</body>
+</html>

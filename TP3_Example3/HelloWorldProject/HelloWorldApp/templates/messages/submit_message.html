@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <title>Submit Message</title>
+</head>
+<body>
+    <h2>Submit Message</h2>
+    <form method="post" action="{% url 'submit_message' %}">
+        {% csrf_token %}
+        Sender: <input type="text" name="sender" required><br>
+        Recipient: <input type="text" name="recipient" required><br>
+        Message: <textarea name="content" required></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
+
+
+

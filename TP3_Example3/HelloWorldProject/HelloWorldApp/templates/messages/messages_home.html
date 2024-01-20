@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <title>Messages Home</title>
+</head>
+<body>
+    <h2>Messages Home</h2>
+    <p>Choose an option:</p>
+    <ul>
+        <li><a href="{% url 'submit_message' %}">Send Message</a></li>
+        <li><a href="{% url 'get_messages' %}">View Messages</a></li>
+    </ul>
+</body>
+</html>

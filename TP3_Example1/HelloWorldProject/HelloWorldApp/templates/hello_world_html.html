@@ -1,0 +1,23 @@
+
+
+{% load static %}
+
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, World!</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, World!</h1>
+        <p>Baptiste CUIGNEZ</p>
+        <button id="counterButton">Do not click me!</button>
+        <p id="counter">The button is currently under maintenance</p>
+    </div>
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>

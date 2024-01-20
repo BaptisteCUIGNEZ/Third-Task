@@ -1,0 +1,23 @@
+
+
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Message List</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h2>Message List</h2>
+    <ul>
+        {% for message in messages %}
+            <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+
+    <!-- Add a button to go back to the messages home page -->
+    <a href="{% url 'messages_home' %}">Back to Messages Home</a>
+</body>
+</html>

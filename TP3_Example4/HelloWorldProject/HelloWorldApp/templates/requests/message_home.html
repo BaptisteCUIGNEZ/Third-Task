@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+</head>
+<body>
+
+    <h1>Welcome to the Homepage!</h1>
+
+    <p>Click on the links below to navigate to other views:</p>
+
+    <ul>
+        <li><a href="{% url 'bad_request_view' %}">Bad Request</a></li>
+        <li><a href="{% url 'not_found_view' %}">Not Found</a></li>
+        <li><a href="{% url 'server_error_view' %}">Internal Server Error</a></li>
+        <li><a href="{% url 'json_view' %}">JSON Data</a></li>
+        <li><a href="{% url 'streaming_view' %}">Streaming dataflow</a></li>
+        <li><a href="{% url 'file_upload' %}">File Upload</a></li>
+        <li><a href="{% url 'list_uploaded_files' %}">List of uploaded files and download</a></li>
+        <!-- Add more links for other views as needed -->
+    </ul>
+
+</body>
+</html>

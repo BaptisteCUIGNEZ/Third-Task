@@ -1,0 +1,24 @@
+<!-- messages/templates/messages/get_messages.html -->
+
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get Messages</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h2>Get Messages</h2>
+    <form method="post" action="{% url 'get_messages' %}">
+        {% csrf_token %}
+        Recipient: <input type="text" name="recipient" required><br>
+        <button type="submit">Get Messages</button>
+    </form>
+
+
+
+    <a href="{% url 'messages_home' %}">Back to Messages Home</a>
+</body>
+</html>
